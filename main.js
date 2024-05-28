@@ -23,4 +23,20 @@ function playMP3() {
     audioPlayer.play();
 }
 
+function requestGit() {
+    fetch(`https://api.github.com/repos/drakyx/drakyx.github.io/contents/assets`, {
+        headers: {
+            Authorization: `token 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`
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(file => {
+            console.log(file.name);
+            // Vous pouvez afficher le nom du fichier dans votre page HTML ici
+        });
+    })
+}
+
+
 window.onload = selectSong;
