@@ -40,4 +40,9 @@ function requestGit() {
     })
 }
 
+<<<<<<< HEAD
 window.onload = selectSong;
+=======
+
+window.onload = selectSong;
+>>>>>>> e1207ec683c3e06077677c5993a02862a4a645aa
