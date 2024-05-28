@@ -13,7 +13,7 @@ function selectSong() {
     });
 }
 
-async function playMP3() {
+function playMP3() {
     var mp3Title = document.getElementById('mp3Select').value;
     var audioSource = document.getElementById('audioSource');
     var audioPlayer = document.getElementById('audioPlayer');
