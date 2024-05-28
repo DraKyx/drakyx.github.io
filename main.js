@@ -1,7 +1,5 @@
 const availableMP3s = ['encore.mp3', 'immonde.mp3', 'lvc.mp3', 'temps.mp3', 'une-autre.mp3', 'silicone.mp3']; // Liste des fichiers MP3 disponibles
 
-const res = music_names.php
-
 function selectSong() {
     const mp3Select = document.getElementById('mp3Select');
 
@@ -40,9 +38,4 @@ function requestGit() {
     })
 }
 
-<<<<<<< HEAD
 window.onload = selectSong;
-=======
-
-window.onload = selectSong;
->>>>>>> e1207ec683c3e06077677c5993a02862a4a645aa
