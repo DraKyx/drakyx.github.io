@@ -1,4 +1,4 @@
-const availableMP3s = ['encore.mp3', 'immonde.mp3', 'lvc.mp3', 'temps.mp3', 'une-autre.mp3', 'silicone.mp3']; // Liste des fichiers MP3 disponibles
+const availableMP3s = ['synthese.mp3', 'stevez.mp3', 'la-calle.mp3', 'encore.mp3', 'immonde.mp3', 'lvc.mp3', 'temps.mp3', 'une-autre.mp3', 'silicone.mp3']; // Liste des fichiers MP3 disponibles
 
 function selectSong() {
     const mp3Select = document.getElementById('mp3Select');
