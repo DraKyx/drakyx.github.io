@@ -31,10 +31,7 @@ function requestGit() {
     })
     .then(response => response.json())
     .then(data => {
-        data.forEach(file => {
-            console.log(file.name);
-            // Vous pouvez afficher le nom du fichier dans votre page HTML ici
-        });
+        console.log(file.name);
     })
 }
 
