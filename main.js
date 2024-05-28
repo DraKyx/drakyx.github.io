@@ -23,16 +23,4 @@ function playMP3() {
     audioPlayer.play();
 }
 
-function requestGit() {
-    fetch(`https://api.github.com/repos/drakyx/drakyx.github.io/contents/assets`, {
-        headers: {
-            Authorization: `token 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`
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
-}
-
 window.onload = selectSong;
