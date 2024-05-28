@@ -1,5 +1,7 @@
 const availableMP3s = ['encore.mp3', 'immonde.mp3', 'lvc.mp3', 'temps.mp3', 'une-autre.mp3', 'silicone.mp3']; // Liste des fichiers MP3 disponibles
 
+const res = music_names.php
+
 function selectSong() {
     const mp3Select = document.getElementById('mp3Select');
 
@@ -21,6 +23,21 @@ function playMP3() {
     audioSource.src = "assets/" + mp3Title;
     audioPlayer.load();
     audioPlayer.play();
+}
+
+function requestGit() {
+    fetch(`https://api.github.com/repos/drakyx/drakyx.github.io/contents/assets`, {
+        headers: {
+            Authorization: `token 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`
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(file => {
+            console.log(file.name);
+            // Vous pouvez afficher le nom du fichier dans votre page HTML ici
+        });
+    })
 }
 
 window.onload = selectSong;
