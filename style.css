@@ -16,7 +16,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
 }
 
 /* Label styles */
@@ -49,4 +51,35 @@ audio {
     font-size: 1.5em;
     color: #444;
     margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    .container h1 {
+        font-size: 1.2em;
+    }
+
+    select {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    audio {
+        width: 100%;
+    }
 }
