@@ -23,4 +23,21 @@ function playMP3() {
     audioPlayer.play();
 }
 
-window.onload = selectSong;
+function playNextSong() {
+    const mp3Select = document.getElementById('mp3Select');
+
+    if (mp3Select.selectedIndex < mp3Select.options.length - 1) {
+        mp3Select.selectedIndex += 1;
+
+    } else {
+        mp3Select.selectedIndex = 0; // Recommence depuis le début si la liste est terminée
+    }
+    playMP3();
+}
+
+window.onload = function() {
+    selectSong();
+    
+    const audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.addEventListener('ended', playNextSong);
+};
