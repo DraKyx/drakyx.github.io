@@ -1,0 +1,52 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Label styles */
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+/* Select styles */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+/* Audio player styles */
+audio {
+    width: 100%;
+    outline: none;
+}
+
+/* Additional styling for the container */
+.container h1 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 20px;
+}

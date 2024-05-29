@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link rel="stylesheet" href="style.css">
+
     <title>Musica</title>
 </head>
 <body>
-    <label for="mp3Select">Sélection fichier MP3 :</label>
-    <select id="mp3Select" onchange="playMP3()"></select>
+     <div class="container">
+        <h1>Musica</h1>
 
-    <audio id="audioPlayer" controls>
-        <source id="audioSource" src="" type="audio/mp3">
-    </audio>
+        <label for="mp3Select">Sélection fichier MP3 :</label>
+        <select id="mp3Select" onchange="playMP3()"></select>
+
+        <audio id="audioPlayer" controls>
+            <source id="audioSource" src="" type="audio/mp3">
+        </audio>
+    </div>
 </body>
 <script src="main.js"></script>
 </html>
