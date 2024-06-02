@@ -18,7 +18,7 @@ function playMP3() {
     var audioSource = document.getElementById('audioSource');
     var audioPlayer = document.getElementById('audioPlayer');
     
-    audioSource.src = "assets/" + mp3Title;
+    audioSource.src = "assets/" + mp3Title + ".mp3";
     audioPlayer.load();
     audioPlayer.play();
 }
