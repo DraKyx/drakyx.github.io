@@ -1,4 +1,4 @@
-const availableMP3s = ["todd-boy.mp3", "danse-roro.mp3", "apero-vinzou.mp3", 'meuda.mp3', 'sale.mp3', 'maman-sait-pas.mp3', 'jungle.mp3', 'mauvais.mp3', 'vie-quon-mene.mp3', 'detaille.mp3', 'tenebreux-4.mp3', 'bon-deja.mp3', 'synthese.mp3', 'stevez.mp3', 'la-calle.mp3', 'encore.mp3', 'immonde.mp3', 'lvc.mp3', 'temps.mp3', 'une-autre.mp3', 'silicone.mp3']; // Liste des fichiers MP3 disponibles
+const availableMP3s = ["haine-sex", "batiment", "rr-9.1", "daddy-chocolat", "todd-boy", "danse-roro", "apero-vinzou", 'meuda', 'sale', 'maman-sait-pas', 'jungle', 'mauvais', 'vie-quon-mene', 'detaille', 'tenebreux-4', 'bon-deja', 'synthese', 'stevez', 'la-calle', 'encore', 'immonde', 'lvc', 'temps', 'une-autre', 'silicone']; // Liste des fichiers MP3 disponibles
 
 function selectSong() {
     const mp3Select = document.getElementById('mp3Select');
